@@ -16,18 +16,20 @@ function bhaskara() {
     let x1 = Math.round(quadradaDelta / 2 * a);
     let x2 = Math.round(-quadradaDelta / 2 * a);
 
-    if (x1 < 0 && x2 > 0) {
+    //  COLOCAR AS RESPOSTA QUE ENTRA NA DIV TUDO EM VARIÁVEIS;
 
-        // let deltaPlus = final * -1; 
-        // let quadradaDelta = Math.sqrt(deltaPlus);
-        // let x1B = -b / 2 * a;
-        // let x1 = Math.round(quadradaDelta / 2 * a);
-        // let x2 = Math.round(-quadradaDelta / 2 * a);
+    // if (x1 < 0 && x2 > 0) {
 
-        result.innerHTML = `X1 é igual a ${x1B}${x1 + "i"}, e X2 é igual a ${x1B}+${x2 + "i"}`;
-    }else{
-        result.innerHTML = `X1 é igual a ${x1B}+${x1 + "i"}, e X2 é igual a ${x1B}${x2 + "i"}`;  
-    }
+    //     // let deltaPlus = final * -1; 
+    //     // let quadradaDelta = Math.sqrt(deltaPlus);
+    //     // let x1B = -b / 2 * a;
+    //     // let x1 = Math.round(quadradaDelta / 2 * a);
+    //     // let x2 = Math.round(-quadradaDelta / 2 * a);
+
+    //     result.innerHTML = `X1 é igual a ${x1B}${x1 + "i"}, e X2 é igual a ${x1B}+${x2 + "i"}`;
+    // }else{
+    //     result.innerHTML = `X1 é igual a ${x1B}+${x1 + "i"}, e X2 é igual a ${x1B}${x2 + "i"}`;  
+    // }
 
 
 }
