@@ -5,6 +5,7 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+
 .container{
     display: flex;
     flex-direction: column;
@@ -53,6 +54,13 @@
     transform: scale(1.1);
 }
 
-.pr{
-    font-size: 16px;
+.resposta{
+    font-size: 18px;
+    cursor: crosshair;
+    transition: .2s;
 }
+.resposta:hover{
+    transform: scale(1.1);
+}
+
+

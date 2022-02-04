@@ -8,6 +8,7 @@ let respostaHTML = document.querySelector(".resposta");
 
 // Events
 btn.addEventListener("click", bhaskara);
+
 // Functions
 function bhaskara() {
 
@@ -30,11 +31,17 @@ function bhaskara() {
     let resX2 = `X2= ${x2}+${x2i}i`;
     let resX2Negativo = `X2= ${x2}${x2i}i`;
 
+
     if (x1i < 0) {
         respostaHTML.innerHTML = resX1 + resX2;
-    } else {
-        respostaHTML.innerHTML = resX1Positivo + resX2Negativo;
+    } else if(x1i > 0){
+        respostaHTML.innerHTML = resX1Positivo + resX2Negativo; 
+    }else if(res > 0){
+        respostaHTML.innerHTML = "DELTA É POSITIVO !";
+    }else{
+        respostaHTML.innerHTML = "---";
     }
+
 }
 
 bhaskara()
