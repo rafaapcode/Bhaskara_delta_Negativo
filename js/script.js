@@ -22,12 +22,12 @@ function bhaskara() {
     let result = Math.sqrt(transform);
 
     let x1 = bNEG / div;
-    let x1i = (result / div).toFixed(2);
+    let x1i = (result / div).toFixed(1);
     let resX1 = `X1= ${x1}${x1i}i, `;
     let resX1Positivo = `X1= ${x1}+${x1i}i, `;
 
     let x2 = bNEG / div;
-    let x2i = -(result / div).toFixed(2);
+    let x2i = (-result / div).toFixed(1);
     let resX2 = `X2= ${x2}+${x2i}i`;
     let resX2Negativo = `X2= ${x2}${x2i}i`;
 
