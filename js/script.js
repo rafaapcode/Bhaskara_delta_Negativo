@@ -1,29 +1,29 @@
 // Initial Data
-let a = 1;
-let b = -6;
-let c = 10;
+let a = document.querySelector("#aValor");
+let b = document.querySelector("#bValor");
+let c = document.querySelector("#cValor");
+let btn = document.querySelector(".calcular");
+let respostaHTML = document.querySelector(".resposta");
 
 
 // Events
-
-
-
+btn.addEventListener("click", bhaskara);
 // Functions
 function bhaskara() {
 
-    let b2 = b * b;
-    let ac = a * c;
+    let b2 = b.value * b.value;
+    let ac = a.value * c.value;
     let four = -4 * ac;
-    let div = 2 * a;
-    let bNEG = -b;
+    let div = 2 * a.value;
+    let bNEG = -b.value;
     let res = b2 + four;
     let transform = res * -1;
     let result = Math.sqrt(transform);
 
     let x1 = bNEG / div;
     let x1i = result / div;
-    let resX1 = `X1= ${x1}${x1i}i,`;
-    let resX1Positivo = `X1= ${x1}+${x1i}i,`;
+    let resX1 = `X1= ${x1}${x1i}i, `;
+    let resX1Positivo = `X1= ${x1}+${x1i}i, `;
 
     let x2 = bNEG / div;
     let x2i = -result / div;
@@ -31,9 +31,9 @@ function bhaskara() {
     let resX2Negativo = `X2= ${x2}${x2i}i`;
 
     if (x1i < 0) {
-        console.log(resX1, resX2);
+        respostaHTML.innerHTML = resX1 + resX2;
     } else {
-        console.log(resX1Positivo, resX2Negativo);
+        respostaHTML.innerHTML = resX1Positivo + resX2Negativo;
     }
 }
 
