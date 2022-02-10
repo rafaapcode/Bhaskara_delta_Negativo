@@ -1,22 +1,22 @@
 // Initial Data
-let a = document.querySelector("#aValor");
-let b = document.querySelector("#bValor");
-let c = document.querySelector("#cValor");
-let btn = document.querySelector(".calcular");
-let respostaHTML = document.querySelector(".resposta");
+let a = $("#aValor");
+let b = $("#bValor");
+let c = $("#cValor");
+let btn = $(".calcular");
+let respostaHTML = $(".resposta");
 
 
 // Events
-btn.addEventListener("click", bhaskara);
+btn.click(bhaskara);
 
 // Functions
 function bhaskara() {
 
-    let b2 = b.value * b.value;
-    let ac = a.value * c.value;
+    let b2 = b.val() * b.val();
+    let ac = a.val() * c.val();
     let four = -4 * ac;
-    let div = 2 * a.value;
-    let bNEG = -b.value;
+    let div = 2 * a.val();
+    let bNEG = -b.val();
     let res = b2 + four;
     let transform = res * -1;
     let result = Math.sqrt(transform);
@@ -33,13 +33,13 @@ function bhaskara() {
 
 
     if (x1i < 0) {
-        respostaHTML.innerHTML = resX1 + resX2;
+        respostaHTML.text(resX1 + resX2);
     } else if(x1i > 0){
-        respostaHTML.innerHTML = resX1Positivo + resX2Negativo; 
+        respostaHTML.text(resX1Positivo + resX2Negativo); 
     }else if(res > 0){
-        respostaHTML.innerHTML = "DELTA É POSITIVO !";
+        respostaHTML.text("DELTA É POSITIVO !");
     }else{
-        respostaHTML.innerHTML = "---";
+        respostaHTML.text("---");
     }
 
 }
